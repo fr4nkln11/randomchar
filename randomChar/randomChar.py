@@ -38,4 +38,3 @@ def password(length):
     
 if __name__ == "__main__":
     print("\nThis module was created by fr4nkl1n-1k3h\n")
-    print(f"password(9): {password(9)}")
