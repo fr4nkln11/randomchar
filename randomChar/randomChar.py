@@ -2,39 +2,61 @@ import random
 import string
 import secrets
 
-
-def letter():
-    return random.choice(string.ascii_letters)
-
-
-def loCase():
-    return random.choice(string.ascii_lowercase)
-
-
-def upCase():
-    return random.choice(string.ascii_uppercase)
+def letter(length = 1):
+    charSequence = []
+    for i in range(length):
+        charSequence.append(random.choice(string.ascii_letters))
+        
+    return ''.join(charSequence)
 
 
-def digit():
-    return random.choice(string.digits)
+def loCase(length = 1):
+    charSequence = []
+    for i in range(length):
+        charSequence.append(random.choice(string.ascii_lowercase))
+        
+    return ''.join(charSequence)
 
 
-def symbol():
-    return random.choice(string.punctuation)
+def upCase(length = 1):
+    charSequence = []
+    for i in range(length):
+        charSequence.append(random.choice(string.ascii_uppercase))
+        
+    return ''.join(charSequence)
 
 
-def all():
-    randomCharList = [letter(), digit(), symbol()]
-    return random.choice(randomCharList)
+def digit(length = 1):
+    charSequence = []
+    for i in range(length):
+        charSequence.append(random.choice(string.digits))
+        
+    return ''.join(charSequence)
+
+
+def symbol(length = 1):
+    charSequence = []
+    for i in range(length):
+        charSequence.append(random.choice(string.punctuation))
+        
+    return ''.join(charSequence)
+
+
+def all(length = 1):
+    charSequence = []
+    for i in range(length):
+        charSequence.append(random.choice(string.ascii_letters + string.digits + string.punctuation))
+        
+    return ''.join(charSequence)
     
 def password(length):
-	charList = []
+	charSequence = []
 	
 	for i in range(length):
-	   charList.append(secrets.choice(string.ascii_letters + string.digits + string.punctuation))
+	   charSequence.append(secrets.choice(string.ascii_letters + string.digits + string.punctuation))
 	   
-	random.shuffle(charList)
-	return ''.join(charList)
+	random.shuffle(charSequence)
+	return ''.join(charSequence)
     
 if __name__ == "__main__":
-    print("\nThis module was created by fr4nkl1n-1k3h\n")
+    print(" ")
