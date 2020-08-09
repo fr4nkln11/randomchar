@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="randomChar-YOUR-USERNAME-HERE", # Replace with your own username
-    version="0.0.1",
+    name="randomChar",
+    version="0.1.0",
     author="Franklin Ikeh",
     author_email="ikehfranklind3c0d3r@gmail.com",
     description="A package that makes random character or sequence generation much easier",
