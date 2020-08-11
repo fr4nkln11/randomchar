@@ -8,13 +8,13 @@ This package has not been released to the Python Package Index (yet).
 ```python
 import randomChar
 
-randomChar.letter(5)
+randomChar.Letter(5)
 #returns a sequence of 5 random characters
-randomChar.digit(9)
+randomChar.Digit(9)
 #returns a sequence of 9 random digits
-randomChar.symbol(3)
+randomChar.Symbol(3)
 #returns a sequence of 3 random symbols
-randomChar.password(8)
+randomChar.Password(8)
 #returns a secure sequence of 8 characters
 ```
 
