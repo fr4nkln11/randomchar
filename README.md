@@ -5,7 +5,8 @@ A Python package that makes generating random characters and sequences much easi
 This package has not been released to the Python Package Index (yet).
 
 ## Usage
-'''python
+'''
+python
 import randomChar
 
 randomChar.letter(5)
@@ -16,7 +17,8 @@ randomChar.symbol(3)
 #returns a sequence of 3 random symbols
 randomChar.password(8)
 #returns a secure sequence of 8 characters
-'''
+'’'
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
