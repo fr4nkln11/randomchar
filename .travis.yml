@@ -1,7 +1,5 @@
 language: python
 python:
-  - "3.4"  
-  - "3.5"
   - "3.6"
   - "3.7"
   - "3.8"  
@@ -12,4 +10,4 @@ python:
 # we have no third-party dependencies
 
 script:
-  python randomChar/test_chars.py
+  pytest
