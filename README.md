@@ -1,8 +1,11 @@
 # randomchar
 
 ## What is `randomchar` ?
+This module is designed to make the task of generating random strings as easy as calling a function.
+To generate a password all you have to do is call `randomchar.password(8)` where 8 is the required length of the password.
+Normally, to do this without randomchar you will have to write verbose code of up to 5 lines or more, randomchar shortens that up to one short line,
 
-## Installation
+# Installation
 This package has not been released to the Python Package Index (yet).
 
 ## Usage
