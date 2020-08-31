@@ -10,4 +10,4 @@ python:
 # we have no third-party dependencies
 
 script:
-  -python test_chars.py
+  python test_chars.py
