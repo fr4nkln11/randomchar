@@ -4,17 +4,16 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="randomChar",
-    version="0.1.5",
+    name="randomchar",
+    version="0.2.2",
     author="Franklin Ikeh",
     author_email="ikehfranklind3c0d3r@gmail.com",
-    tests_require=["pytest"],
     py_modules=["randomchar"],
-    description="Simpler random string generation",
+    description="Simpler random string/digit generation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/fr4nkl1n-1k3h/randomChar",
-    keywords=['random, strings, characters, tools, module, generator']
+    url="https://github.com/fr4nkl1n-1k3h/randomchar",
+    keywords=['random, strings, digits, characters, tools, module, generator']
     classifiers=[
         "Programming Language :: Python :: 3",
         'Programming Language :: Python :: 3.6',

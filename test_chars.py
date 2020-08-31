@@ -1,30 +1,43 @@
-import string
-import randomChar
+import unittest
+from string import (
+    ascii_letters as letters,
+    ascii_lowercase as lowercase,
+    ascii_uppercase as uppercase,
+    octdigits,
+    hexdigits,
+    digits,
+    punctuation,
+)
+import randomchar
 
-def test_Letter_char():
-    test_result = string.ascii_letters
-    result = randomChar.Letter()
-    assert result in test_result
-    
-def test_LoCase_char():
-    test_result = string.ascii_lowercase
-    result = randomChar.LoCase()
-    assert result in test_result
-    
-def test_UpCase_char():
-    test_result = string.ascii_uppercase
-    result = randomChar.UpCase()
-    assert result in test_result
-    
-def test_Digit():
-    test_result = string.digits
-    result = randomChar.Digit()
-    assert result in test_result
-    
-def test_Symbol():
-    test_result = string.punctuation
-    result = randomChar.Symbol()
-    assert result in test_result
-    
-if __name__ == '__main__':
-    print("randomChar v0.1.0-beta")
+
+class Letter_test(unittest.TestCase):
+    def test_no_parameter(self):
+        self.assertIn(randomchar.letter(), letters)
+
+    def test_length(self):
+        self.assertEqual(len(randomchar.letter(6)), 6)
+    def test_negative_parameter(self):
+    	self.assertEqual(randomchar.letter(-2), "")
+
+    def test_string(self):
+        string = randomchar.letter(5)
+        for letter in string:
+            self.assertIn(letter, letters)
+
+class LowerCase_test(unittest.TestCase):
+    def test_no_parameter(self):
+        self.assertIn(randomchar.lowerCase(), lowercase)
+
+    def test_length(self):
+        self.assertEqual(len(randomchar.lowerCase(6)), 6)
+    def test_negative_parameter(self):
+    	self.assertEqual(randomchar.lowerCase(-2), "")
+
+    def test_string(self):
+        string = randomchar.lowerCase(5)
+        for letter in string:
+            self.assertIn(letter, lowercase)
+
+if __name__ == "__main__":
+    unittest.main()
