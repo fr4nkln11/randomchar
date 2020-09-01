@@ -1,5 +1,5 @@
 # randomchar
-https://img.shields.io/github/license/fr4nkl1n-1k3h[![GitHub license](https://img.shields.io/github/license/fr4nkl1n-1k3h/randomchar)](https://github.com/fr4nkl1n-1k3h/randomchar/blob/master/LICENSE.txt)
+[![GitHub license](https://img.shields.io/github/license/fr4nkl1n-1k3h/randomchar)](https://github.com/fr4nkl1n-1k3h/randomchar/blob/master/LICENSE.txt)
 [![Build Status](https://travis-ci.org/fr4nkl1n-1k3h/randomchar.svg?branch=master)](https://travis-ci.org/fr4nkl1n-1k3h/randomchar)
 ## What is `randomchar` ?
 This module is designed to make the task of generating random strings as easy as calling a function.
