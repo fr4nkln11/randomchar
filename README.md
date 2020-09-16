@@ -42,6 +42,12 @@ By importing the class from the module
 # Installation
 This package has not been released to the Python Package Index (yet).
 
+To install on Linux:
+```bash
+git clone https://github.com/fr4nkl1n-1k3h/randomchar
+cd randomchar
+pip install .
+```
 ## Usage
 ```python
 import randomchar
