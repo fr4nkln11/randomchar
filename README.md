@@ -43,10 +43,11 @@ By importing the class from the module
 
 
 # Installation
-This package has not been released to the Python Package Index (yet).
-
-
-To install on Linux:
+Install with pip:
+```bash
+pip install randomchar
+```
+or 
 ```bash
 git clone https://github.com/fr4nkl1n-1k3h/randomchar
 cd randomchar
@@ -61,7 +62,7 @@ randomchar.letter(5)
 #returns a sequence of 5 random characters
 
 randomchar.symbol(3)
-#returns a sequence of 3 random symbolsa
+#returns a sequence of 3 random symbols
 
 digit.binary(7)
 #returns a sequence of 7 random binary digits
