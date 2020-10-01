@@ -1,4 +1,7 @@
 # randomchar
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+
 [![GitHub license](https://img.shields.io/github/license/fr4nkl1n-1k3h/randomchar)](https://github.com/fr4nkl1n-1k3h/randomchar/blob/master/LICENSE.txt)
 [![Build Status](https://travis-ci.com/fr4nkl1n-1k3h/randomchar.svg?branch=master)](https://travis-ci.com/fr4nkl1n-1k3h/randomchar)
 ## What is `randomchar` ?
@@ -41,6 +44,7 @@ By importing the class from the module
 
 # Installation
 This package has not been released to the Python Package Index (yet).
+
 
 To install on Linux:
 ```bash
