@@ -1,8 +1,7 @@
 # randomchar
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-
-
-[![GitHub license](https://img.shields.io/github/license/fr4nkl1n-1k3h/randomchar)](https://github.com/fr4nkl1n-1k3h/randomchar/blob/master/LICENSE.txt)
+[![GitHub stars](https://img.shields.io/github/stars/fr4nkl1n-1k3h/randomchar?style=for-the-badge)](https://github.com/fr4nkl1n-1k3h/randomchar/stargazers)
+[![GitHub license](https://img.shields.io/github/license/fr4nkl1n-1k3h/randomchar?style=for-the-badge)](https://github.com/fr4nkl1n-1k3h/randomchar/blob/master/LICENSE.txt)
 [![Build Status](https://travis-ci.com/fr4nkl1n-1k3h/randomchar.svg?branch=master)](https://travis-ci.com/fr4nkl1n-1k3h/randomchar)
 ## What is `randomchar` ?
 `randomchar` is a very simple solution to a very simple and common task, with the `randomchar` module you generate passwords, pseudo-emails or phone numbers for testing, unique id numbers, url tokens and other random strings by just calling a function and adding a parameter.
