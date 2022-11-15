@@ -43,7 +43,7 @@ def letter(length: int = 1) -> str:
     if length is not given, the function returns only a single character
     """
 
-    return "".join(choice(letters) for i in range(length))
+    return "".join(choice(letters) for _ in range(length))
 
 
 def lowerCase(length: int = 1) -> str:
@@ -55,7 +55,7 @@ def lowerCase(length: int = 1) -> str:
     if length is not given, the function returns only a single character
     """
 
-    return "".join(choice(lowercase) for i in range(length))
+    return "".join(choice(lowercase) for _ in range(length))
 
 
 def upperCase(length: int = 1) -> str:
@@ -67,7 +67,7 @@ def upperCase(length: int = 1) -> str:
     if length is not given, the function returns only a single character
     """
 
-    return "".join(choice(uppercase) for i in range(length))
+    return "".join(choice(uppercase) for _ in range(length))
 
 
 def symbol(length: int = 1) -> str:
@@ -79,7 +79,7 @@ def symbol(length: int = 1) -> str:
     if length is not given, the function returns only a single character
     """
 
-    return "".join(choice(punctuation) for i in range(length))
+    return "".join(choice(punctuation) for _ in range(length))
 
 
 def printable(length: int = 1) -> str:
@@ -91,7 +91,7 @@ def printable(length: int = 1) -> str:
     if length is not given, the function returns only a single character
     """
 
-    return "".join(choice(letters + digits + punctuation) for i in range(length))
+    return "".join(choice(letters + digits + punctuation) for _ in range(length))
 
 
 class Digit:
@@ -129,8 +129,9 @@ class Digit:
             return choice(octdigits)
         elif length > 1:
             return choice(octdigits[1:]) + "".join(
-                choice(octdigits) for i in range(length - 1)
+                choice(octdigits) for _ in range(length - 1)
             )
+
         elif length < 1:
             return ""
 
@@ -146,8 +147,9 @@ class Digit:
             return choice(digits)
         elif length > 1:
             return choice(digits[1:]) + "".join(
-                choice(digits) for i in range(length - 1)
+                choice(digits) for _ in range(length - 1)
             )
+
         elif length < 1:
             return ""
 
@@ -163,8 +165,9 @@ class Digit:
             return choice(hexdigits)
         elif length > 1:
             return choice(hexdigits[1:]) + "".join(
-                choice(hexdigits) for i in range(length - 1)
+                choice(hexdigits) for _ in range(length - 1)
             )
+
         elif length < 1:
             return ""
 
@@ -182,7 +185,4 @@ def user_set(chars = "", length: int = 1) -> str:
      length: defines the length of the character sequence
         if length is not given, the function will return only a single character from the set
     """
-    if chars != "":
-        return ''.join(choice(chars) for i in range(length))
-    if chars == "":
-        return ""
+    return ''.join(choice(chars) for _ in range(length)) if chars != "" else ""
