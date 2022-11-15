@@ -137,7 +137,7 @@ class Octal_digit_test(unittest.TestCase):
         x = int(digit.octal(4), 8)
         y = int(digit.octal(3), 8)
         sum = oct(x + y)
-        for octd in str(sum)[2:]:
+        for octd in sum[2:]:
             self.assertIn(octd, octdigits)
 
     def test_conversion_prefix(self):
@@ -197,7 +197,7 @@ class Binary_digit_test(unittest.TestCase):
         x = int(digit.binary(4), 2)
         y = int(digit.binary(3), 2)
         sum = bin(x + y)
-        for bind in str(sum)[2:]:
+        for bind in sum[2:]:
             self.assertIn(bind, digit.binary_numbers)
 
     def test_conversion_prefix(self):
@@ -227,7 +227,7 @@ class Hexadecimal_digit_test(unittest.TestCase):
         x = int(digit.hexadecimal(4), 16)
         y = int(digit.hexadecimal(3), 16)
         sum = hex(x + y)
-        for hexd in str(sum)[2:]:
+        for hexd in sum[2:]:
             self.assertIn(hexd, hexdigits)
 
     def test_conversion_prefix(self):
